@@ -1,0 +1,60 @@
+OBRAS & RAÍZES — SITE INICIAL
+==============================
+
+Arquivos:
+- index.html  -> estrutura e conteúdo da página
+- style.css   -> cores, layout, tipografia e responsividade
+- script.js   -> carrosséis, projetos e formulário para WhatsApp
+
+COMO VISUALIZAR
+1. Extraia o ZIP.
+2. Abra a pasta no Visual Studio Code.
+3. Abra o index.html no navegador (ou use a extensão Live Server).
+
+ANTES DE PUBLICAR — PERSONALIZAÇÃO NECESSÁRIA
+1. No script.js, atualize:
+   - whatsappNumber: número com DDI 55 + DDD + número, somente dígitos.
+     Exemplo fictício: 5541999999999
+   - phoneDisplay: telefone formatado para exibição.
+   - emailDisplay: e-mail real, ou deixe um texto sem @ para ocultar o link de e-mail.
+   - serviceArea: cidade/região real para o link do mapa.
+2. Troque o nome "Obras & Raízes" pelo nome profissional escolhido.
+3. Atualize os serviços para refletir o que seu pai realmente faz.
+4. No array `projects` do script.js, altere títulos, categorias, local, ano,
+   descrição, tipo de serviço e fotos de cada obra.
+5. Substitua as fotos demonstrativas por fotos reais. As fotos atuais são apenas
+   referências visuais e NÃO devem ser apresentadas como obras executadas pelo seu pai.
+6. Remova os colchetes [ ... ] e revise todos os textos antes de publicar.
+7. Se for usar um endereço exato, confirme com seu pai antes de publicar.
+
+COMO ADICIONAR UM PROJETO
+No arquivo script.js, copie um dos objetos dentro do array `projects`, cole
+antes do `];` final e altere os dados. O carrossel é criado automaticamente para
+cada objeto e funciona com qualquer quantidade de fotos. Para cada foto, informe:
+{ src: "caminho-ou-url-da-foto", alt: "descrição da imagem", caption: "etapa da obra" }
+
+Sugestão de organização das fotos locais:
+assets/projetos/casa-jardim/fundacao.jpg
+assets/projetos/casa-jardim/alvenaria.jpg
+assets/projetos/casa-jardim/telhado.jpg
+assets/projetos/casa-jardim/acabamento.jpg
+Nesse caso, use caminhos como:
+src: "assets/projetos/casa-jardim/fundacao.jpg"
+
+CONTATO
+O formulário não guarda dados nem envia automaticamente. Ao clicar, abre o WhatsApp
+com uma mensagem preenchida para a pessoa revisar e enviar. Configure o número real
+no script.js antes de divulgar o site.
+
+MAPA
+A seção de localização e o link do Google Maps usam a variável `serviceArea`.
+Ajuste a cidade ou região. O painel do mapa é um espaço visual ilustrativo; para
+mostrar um mapa incorporado de verdade, será preciso adicionar um iframe do Google Maps
+depois de definir o local.
+
+NOTAS
+- O site é responsivo para celular e computador.
+- As imagens de destaque usam URLs externas; é recomendável substituí-las por fotos
+  próprias otimizadas antes de colocar o site no ar.
+- O formulário é front-end e abre o WhatsApp. Para formulário com envio por e-mail,
+  armazenamento ou painel administrativo, será necessário configurar um serviço extra.

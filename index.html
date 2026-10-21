@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Construção, reformas e acompanhamento de obras com cuidado em cada etapa. Conheça nossos projetos e solicite um orçamento.">
+  <meta name="theme-color" content="#20251f">
+  <title>Obras & Raízes | Construção e Reformas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#inicio" aria-label="Obras & Raízes - início">
+        <span class="brand-mark" aria-hidden="true">O<span>+</span></span>
+        <span class="brand-copy"><strong>OBRAS <i>&</i> RAÍZES</strong><small>CONSTRUÇÃO • REFORMAS • EXECUÇÃO</small></span>
+      </a>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu">☰</button>
+      <nav id="nav-menu" class="nav-menu" aria-label="Navegação principal">
+        <a href="#servicos">Serviços</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#localizacao">Atendimento</a>
+        <a class="nav-cta" href="#contato">Solicitar orçamento <span>↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio">
+      <div class="hero-shade"></div>
+      <div class="container hero-content">
+        <p class="eyebrow"><span></span> DO PRIMEIRO TRAÇO À ENTREGA</p>
+        <h1>Trabalho bem-feito.<br><em>Estrutura para durar.</em></h1>
+        <p class="hero-text">Construção e reforma com planejamento, capricho e atenção em cada etapa da obra — da fundação aos acabamentos.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projetos">Conheça os projetos <span>↘</span></a>
+          <a class="button button-ghost" href="#contato">Converse sobre sua obra</a>
+        </div>
+        <div class="hero-note"><span class="note-line"></span><span>COMPROMISSO NO CANTEIRO. QUALIDADE NO RESULTADO.</span></div>
+      </div>
+      <div class="hero-index"><span>01</span> / CONSTRUÇÃO COM PROPÓSITO</div>
+    </section>
+
+    <section class="intro-strip">
+      <div class="container intro-grid">
+        <p class="section-kicker">NOSSO JEITO DE TRABALHAR</p>
+        <p class="intro-statement">Cada obra tem uma história. <strong>A nossa é construída com responsabilidade, transparência e cuidado nos detalhes.</strong></p>
+        <a class="text-link" href="#sobre">Conheça nossa forma de trabalhar <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="section services-section" id="servicos">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="section-kicker">O QUE FAZEMOS</p><h2>Da base ao <em>acabamento.</em></h2></div>
+          <p class="section-description">Soluções práticas para tirar projetos do papel, organizar cada fase e entregar um trabalho bem executado.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card"><span class="service-number">01</span><div class="service-icon">⌂</div><h3>Construção residencial</h3><p>Execução de casas e ampliações, respeitando o projeto e as necessidades de cada cliente.</p><span class="service-rule"></span></article>
+          <article class="service-card"><span class="service-number">02</span><div class="service-icon">▤</div><h3>Reformas e melhorias</h3><p>Reorganização de ambientes, melhorias estruturais e renovação de espaços existentes.</p><span class="service-rule"></span></article>
+          <article class="service-card"><span class="service-number">03</span><div class="service-icon">⌁</div><h3>Alvenaria e acabamentos</h3><p>Execução cuidadosa de paredes, revestimentos, pisos e etapas de finalização.</p><span class="service-rule"></span></article>
+          <article class="service-card"><span class="service-number">04</span><div class="service-icon">◫</div><h3>Coordenação de obra</h3><p>Acompanhamento das etapas, organização do trabalho e atenção à sequência dos serviços.</p><span class="service-rule"></span></article>
+        </div>
+        <p class="small-note">* Ajuste esta lista para refletir exatamente os serviços que seu pai oferece.</p>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projetos">
+      <div class="container">
+        <div class="section-heading project-heading">
+          <div><p class="section-kicker">PORTFÓLIO DE OBRAS</p><h2>Feito em etapas.<br><em>Visto em detalhes.</em></h2></div>
+          <p class="section-description">Veja a evolução de cada projeto: do início da execução até os detalhes finais. Cada obra tem sua própria galeria.</p>
+        </div>
+        <div class="project-toolbar">
+          <span><i class="status-dot"></i> PROJETOS SELECIONADOS</span>
+          <span class="toolbar-right">FOTOS REAIS • ETAPAS DA OBRA</span>
+        </div>
+        <div id="project-list" class="project-list" aria-live="polite"></div>
+        <div class="portfolio-footer"><span class="footer-mark">✳</span><p>Tem uma obra em mente? <strong>Vamos conversar sobre o seu projeto.</strong></p><a class="text-link" href="#contato">Solicitar orçamento <span>↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="process-section">
+      <div class="container process-layout">
+        <div class="process-intro"><p class="section-kicker">COMO A OBRA AVANÇA</p><h2>Planejamento claro.<br><em>Execução cuidadosa.</em></h2><p>Uma boa obra começa com conversa e organização. As etapas variam conforme o projeto, mas a comunicação deve acompanhar todo o processo.</p></div>
+        <div class="process-steps">
+          <article><span>01</span><div><h3>Conversa inicial</h3><p>Entender o que precisa ser feito, o local e as expectativas.</p></div></article>
+          <article><span>02</span><div><h3>Visita e alinhamento</h3><p>Avaliar as condições da obra e alinhar escopo e próximos passos.</p></div></article>
+          <article><span>03</span><div><h3>Execução por etapas</h3><p>Organizar os serviços e acompanhar a evolução do trabalho.</p></div></article>
+          <article><span>04</span><div><h3>Revisão e entrega</h3><p>Conferir os serviços realizados e alinhar os detalhes finais.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="sobre">
+      <div class="container about-grid">
+        <div class="about-photo" role="img" aria-label="Textura de concreto e materiais de construção">
+          <div class="about-stamp"><span>TRABALHO</span><strong>COM<br>RAÍZES</strong><span>FEITO PARA DURAR</span></div>
+        </div>
+        <div class="about-copy"><p class="section-kicker">QUEM ESTÁ POR TRÁS DA OBRA</p><h2>Experiência prática.<br><em>Respeito por cada detalhe.</em></h2>
+          <p>Mais do que executar serviços, nosso compromisso é cuidar do processo: entender o que o cliente precisa, manter uma comunicação direta e trabalhar com atenção em cada fase.</p>
+          <p>Este espaço é para contar a trajetória do seu pai, os tipos de obra em que tem mais experiência e o que diferencia seu trabalho. Use uma foto real dele ou da equipe quando estiver pronta.</p>
+          <a class="button button-dark" href="#contato">Fale diretamente conosco <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="location-section" id="localizacao">
+      <div class="container location-grid">
+        <div><p class="section-kicker">ONDE ATENDEMOS</p><h2>Presença local.<br><em>Compromisso de perto.</em></h2><p class="location-copy">Atendimento em <strong>[CIDADE / REGIÃO]</strong> e arredores. Entre em contato para verificar disponibilidade para sua obra.</p><a class="text-link" id="map-link" href="https://www.google.com/maps" target="_blank" rel="noopener">Ver região no mapa <span>↗</span></a></div>
+        <div class="map-panel">
+          <div class="map-grid-lines"></div><div class="map-pin">⌖</div><div class="map-label"><span>ÁREA DE ATENDIMENTO</span><strong>[CIDADE / REGIÃO]</strong><small>Localização a confirmar</small></div>
+          <p class="map-disclaimer">O mapa será configurado quando a cidade ou endereço de atendimento for definido.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contato">
+      <div class="container contact-grid">
+        <div class="contact-intro"><p class="section-kicker">VAMOS CONVERSAR</p><h2>O próximo projeto<br>pode ser <em>o seu.</em></h2><p>Conte um pouco sobre o que você precisa. O primeiro passo é uma conversa clara, sem complicação.</p>
+          <div class="contact-details">
+            <a id="phone-link" href="tel:+5500000000000"><span class="contact-symbol">↗</span><span><small>TELEFONE / WHATSAPP</small><strong id="phone-display">[INSERIR TELEFONE]</strong></span></a>
+            <a id="email-link" href="mailto:contato@exemplo.com"><span class="contact-symbol">✉</span><span><small>E-MAIL</small><strong id="email-display">[INSERIR E-MAIL, SE HOUVER]</strong></span></a>
+          </div>
+        </div>
+        <form id="contact-form" class="contact-form">
+          <p class="form-kicker">FALE SOBRE SUA OBRA</p>
+          <label for="name">Seu nome</label><input id="name" name="name" type="text" placeholder="Como podemos chamar você?" required>
+          <div class="form-row"><div><label for="phone">Telefone</label><input id="phone" name="phone" type="tel" placeholder="(00) 00000-0000" required></div><div><label for="service">Tipo de serviço</label><select id="service" name="service" required><option value="">Selecione</option><option>Construção</option><option>Reforma</option><option>Alvenaria / acabamento</option><option>Coordenação de obra</option><option>Outro</option></select></div></div>
+          <label for="location">Onde será a obra?</label><input id="location" name="location" type="text" placeholder="Cidade ou bairro">
+          <label for="message">Conte um pouco sobre o projeto</label><textarea id="message" name="message" rows="4" placeholder="O que você pretende construir ou reformar?"></textarea>
+          <button class="button button-primary submit-button" type="submit">Enviar pelo WhatsApp <span>↗</span></button>
+          <small class="form-privacy">Ao enviar, seu aplicativo de WhatsApp será aberto com a mensagem pronta para revisão.</small>
+          <p id="form-feedback" class="form-feedback" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main"><a class="brand footer-brand" href="#inicio"><span class="brand-mark">O<span>+</span></span><span class="brand-copy"><strong>OBRAS <i>&</i> RAÍZES</strong><small>CONSTRUÇÃO • REFORMAS • EXECUÇÃO</small></span></a><p>Construir com cuidado.<br>Entregar com responsabilidade.</p><a class="back-top" href="#inicio">VOLTAR AO TOPO ↑</a></div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> Obras & Raízes. Todos os direitos reservados.</span><span>Site demonstrativo — personalize os dados antes de publicar.</span></div>
+  </footer>
+</body>
+</html>
